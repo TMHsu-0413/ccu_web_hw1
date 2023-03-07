@@ -1,0 +1,255 @@
+/*
+ css reset
+*/ 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font-family: sans-serif;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*      -------------------------------------              */
+
+.Header_a{
+  text-decoration:none;
+  color:#ffffff;
+}
+
+.Header_a:visited{
+  color:#ffffff;
+}
+/*        Header       */
+.header{
+  color:#ffffff;
+  background-image: url("image/Zootopia.png");
+  display:flex;
+  width:100%;
+  height:50vh;
+}
+
+.Slogan{
+  margin-left:30px;
+  flex:3;
+  font-size:51px;
+}
+
+.Menu{
+  text-transform:Uppercase;
+  display:flex;
+  justify-content:space-evenly;
+  flex:17;
+  font-size:20px;
+  height:7vh;
+  align-items:center;
+}
+.Menu div{
+  cursor:pointer;
+  padding:10px 15px;
+}
+
+.dropdown{
+  position:relative;
+  display:inline-block;
+}
+
+.dropdown-content{
+  display:none;
+  position:absolute;
+  color:#ffffff;
+  top:100%;
+  border:1px solid #ffffff;
+  background-color:transparent;
+  left:0;
+}
+
+.dropdown:hover {
+  background-color:#c1b5a4;
+  color:#80624f;
+}
+.dropdown:hover .dropdown-content{
+  display:flex;
+  flex-direction:column;
+  width:100%;
+  padding:0px;
+}
+.items{
+  text-align:center;
+}
+.items:hover{
+  background-color:#c1b5a4;
+  color:#80624f;
+}
+
+/*  ------------------------------     */
+
+/* Home   */
+
+.Home{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  background-image: url("image/texture.png");
+  height:100%;
+  width:100%;
+  padding: 20px 0;
+}
+.Home_Title_Container{
+  display:inline-block;
+  margin-top:20px;
+  margin-bottom:20px;
+  text-align:center;
+}
+.Home_Title{
+  display:block;
+  font-size:51px;
+  font-weight: bold;
+  color:#80624f;
+  white-space:nowrap;
+  overflow:hidden;
+  animation:typing 7s steps(7);
+}
+.Home_img{
+  margin-top:40px;
+  width:500px;
+  height:500px;
+  border-radius:50%;
+  box-shadow:0 0 20px #80624f,0 0 15px #000000,0 0 28px #000000, 0 0 35px #80624f;
+
+}
+
+@keyframes typing {
+  from{
+    width:0;
+  }
+  to{
+    width:100%;
+  }
+}
+
+/* Animals   */
+.Animals{
+  height:auto;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  background-image: url("image/texture.png");
+  padding-bottom:30px;
+
+}
+.Title {
+  text-align:center;
+  font-size:51px;
+  font-weight: bold;
+  padding: 20px;
+  color:#80624f;
+}
+
+.table{
+  font-size:20px;
+  width:50%;
+  border-collapse:collapse;
+  text-align:center;
+}
+.table tr th{
+  padding:5px;
+  font-weight:normal;
+  border:1px solid #000000;
+
+}
+.table tr td{
+  height:100%;
+  vertical-align:middle;
+  text-align:left;
+  border:1px solid #000000;
+}
+.table tr td img{
+  padding:0px 0px;
+  display:block;
+}
+/*----------------------------------------  */
+
+/* Information */
+.information{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  background-image: url('image/texture.png');
+}
+.content{
+  font-size:20px;
+  width:50%;
+}
+
+.layer1{
+  margin-bottom:20px;
+  list-style:square;
+}
+.layer1 p{
+  line-height:30px;
+}
+.layer1 li{
+  padding:5px 0;
+  margin:10px 0;
+}
+.layer2{
+  padding-left:20px;
+  list-style:decimal;
+}
+.layer2 li{
+  padding: 5px 0;
+  margin:10px 0;
+}
+
+.layer3{
+  padding-left:30px;
+  list-style:circle;
+}
+.layer3 li{
+}
+/*---------------------------------------- */ 
+/* Footer */
+.Footer{
+  display:flex;
+  font-size: 20px;
+  justify-content:center;
+  padding: 5px 0px;
+  color:#ffffff;
+  background-color:#363945;
+}
